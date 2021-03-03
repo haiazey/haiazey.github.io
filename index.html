@@ -12,7 +12,7 @@
   <main>
     <form>
       <label for = "studentId">Student ID</label><br>
-      <input type="text" name="studentId" id="studentId"><br>
+      <input type="number" name="studentId" id="studentId"><br>
       <label for="firstName">First Name</label><br>
       <input type="text" name="firstName" id="firstName"><br>
       <label for="lastName">Last Name</label><br>
@@ -29,6 +29,26 @@
       <button id="showBtn" class="btn waves-effect waves-light">Show</button>
     </form>
   </main>
-  <script src="./function.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBtQC3rF0qedYGM_sUOax7FOJ258Hm2ZYs",
+      authDomain: "yelizdingler-382b4.firebaseapp.com",
+      projectId: "yelizdingler-382b4",
+      storageBucket: "yelizdingler-382b4.appspot.com",
+      messagingSenderId: "684856170678",
+      appId: "1:684856170678:web:59893f04533e45ac59ee17"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="./function.js"> </script>
 </body>
 </html>
